@@ -31,13 +31,13 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
    1. go to discord developer Portal
    1. sign up
    1. create an application
-   1. under OAuth2 copy the client Id and put it .env as `DISCORD_CLIENT_ID`
-   1. click reset Secret and copy that id and put it in `DISCORD_CLIENT_SECRET`
-   1. set redirects to `http://localhost:3000/api/auth/callback/discord`
+   1. under OAuth2 copy the client Id and put it .env as `DISCORD_CLIENT_ID` in your .env
+   1. click reset Secret and copy that id and put it in `DISCORD_CLIENT_SECRET` in your .env
+   1. set redirects to `http://localhost:3000/api/auth/callback/discord` in the discord developer portal
 1. install [mongo](https://www.mongodb.com/docs/manual/installation/)
 
    1. include the service
-   1. set `DATABASE_URL` to what ever you set the username and password to
+   1. set `DATABASE_URL` in your .env to what ever you set the username and password to
 
       default is `mongodb://localhost:27017/code_nerds`
 
