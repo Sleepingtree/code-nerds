@@ -7,4 +7,4 @@ export interface Post {
   createDate: Date;
 }
 
-export const postCollection = db.db().collection<Post>("Post");
+export const postCollection = db.db().collection<Post>("post");

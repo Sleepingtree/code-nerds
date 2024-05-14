@@ -1,6 +1,6 @@
 import { ObjectId } from "mongodb";
 import { z } from "zod";
-import { postCollection } from "~/entites/post";
+import { postCollection } from "~/entities/post";
 
 import {
   createTRPCRouter,
