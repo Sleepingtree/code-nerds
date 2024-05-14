@@ -26,14 +26,19 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 
 ## How do I set this up
 
-1. run `yarn` from the poject root
+1. download [bun](https://bun.sh/docs/installation)
+1. run `bun install` from the poject root
 1. create a .env file in the root of the project
-   1. go to discord developer Portal
+1. go to discord developer Portal
    1. sign up
    1. create an application
    1. under OAuth2 copy the client Id and put it .env as `DISCORD_CLIENT_ID` in your .env
    1. click reset Secret and copy that id and put it in `DISCORD_CLIENT_SECRET` in your .env
    1. set redirects to `http://localhost:3000/api/auth/callback/discord` in the discord developer portal
+   1. under OAuth2 URL Generator click bot then bot permissions click Administrator
+   1. click the bot tab
+   1. click reset token
+   1. Put that token in .env as `DISCORD_BOT_TOKEN`
 1. install [mongo](https://www.mongodb.com/docs/manual/installation/)
 
    1. include the service
